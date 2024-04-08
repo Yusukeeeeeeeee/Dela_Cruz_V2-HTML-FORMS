@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Scuttle Shack" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Scuttle' Order Form</h1>
+        <h2>Place an order to taste
+             an extraordinary cuisines</h2>
+        <h3>Our food here are like scuttles fresh from the rift!</h3>
+        <img src="Scuttle.jpg" alt="Logo" class="logo">
+        <div class="additional-info">
+            <h3>Additional Info</h3>    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+        </div>
+        <div id="dropdown">
+            <button class="dropdown-toggle">
+                <span>Menu</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Italian</a></li>
+                <li class="menu-item"><a href="#">Chinese</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Healthy Options</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Vegetarian</a></li>
+                    </ul> 
+                </li>
+                <li class="menu-item"><a href="#">Mexican</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Specials </span>
+                       <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="additional-options">
+            <h3>Additional Options</h3>
+            <label for="mode_of_payment">Mode of Payment:</label>
+            <select id="mode_of_payment" name="mode_of_payment">
+                <option value="cash">Cash</option>
+                <option value="card">Card</option>
+            </select><br><br>
+            <label for="dine_in_take_out">Dine-in / Take-out:</label>
+            <input type="radio" id="dine_in" name="dine_in_take_out" value="dine_in">
+            <label for="dine_in">Dine-in</label>
+            <input type="radio" id="take_out" name="dine_in_take_out" value="take_out">
+            <label for="take_out">Take-out</label><br><br>
+            <label for="comments">Comments/Instruction:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+            <button type="submit">Order Placed</button>
+            <button type="button">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
